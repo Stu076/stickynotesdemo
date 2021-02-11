@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="{{ url_for('static', filename='/css/lib/bootstrap/css/bootstrap.min.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='/css/login.css') }}">
+	<script type="text/javascript" src="{{ url_for('static', filename='/js/lib/jquery-3.5.1.min.js') }}"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='/css/lib/bootstrap/js/bootstrap.min.js') }}"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='/js/lib/js.cookie.min.js') }}"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='/js/login.js') }}"></script>
+
+	<title>Login</title>
+</head>
+<body>
+	<div class="wrapper ">
+		<div id="formContent">
+
+				<input type="text" id="email" name="login" placeholder="Enter email..." class="  form-control">
+				<input type="password" id="password" name="password" placeholder="Enter password..." class="  form-control">
+				<button id="switch" class=" btn btn-dark">Register</button>
+				<button id="login" class=" btn btn-light">Log In</button>
+				<button id="register" class=" btn btn-light">Register</button>
+
+		</div>
+	</div>
+</body>
+</html>

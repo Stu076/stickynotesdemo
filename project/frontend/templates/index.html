@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='/css/lib/bootstrap/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='/css/stickynotes.css') }}">
+	<script type="text/javascript" src="{{ url_for('static', filename='/js/lib/jquery-3.5.1.min.js') }}"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='/css/lib/bootstrap/js/bootstrap.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='/js/lib/js.cookie.min.js') }}"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='/js/login.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='/js/stickynotes.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='/js/status.js') }}"></script>
+    <title>Home</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button id="logout" class="btn btn-dark">Log Out</button>
+        <button id="add-note-popup-btn" class="btn btn-dark">Add sticky note</button>
+    </nav>
+    <main id="stickynotes-wrapper">
+
+    </main>
+    <div id="add-note-popup" class="stickynote float-left">
+        <div>
+            <textarea id="add-note-content" name="note-content" rows="5" cols="50"></textarea>
+        </div>
+        <div>
+            <button id="add-note" class="btn btn-primary">Add sticky note</button>
+            <button id="cancel-add-note" class="btn btn-secondary">Cancel</button>
+        </div>
+    </div>
+</body>
+</html>
